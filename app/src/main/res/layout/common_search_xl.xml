@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <include layout="@layout/common_search_l"
+         android:id="@+id/ll_news_serach"/>
+    
+     <RelativeLayout 
+        android:id="@+id/rl_call"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll_news_serach">
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/qq_conversation_icon_calllist_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_marginTop="10dp" 
+            android:id="@+id/tv_call1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/tv_call1"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/iv_call"/>
+        <TextView 
+            android:id="@+id/tv_call2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/tv_call2"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tv_call1"/>
+        <Button
+            android:id="@+id/btn_constact" 
+            android:layout_height="50sp"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/login_btn"
+            android:text="@string/btn_call"
+            android:textColor="@color/whites"
+            android:layout_below="@id/tv_call2"/>
+    </RelativeLayout>
+    
+     <com.qq.view.LoadingView 
+        android:id="@+id/loading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

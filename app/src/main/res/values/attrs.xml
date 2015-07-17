@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MsgListView">
+        <attr name="loadingMoreTextColor" format="color" />
+        <attr name="loadingMoreTextSize" format="dimension" />
+        <attr name="loadingMoreBKColor" format="reference|color" />
+        <attr name="refreshTextColor" format="color" />
+        <attr name="refreshTextSize" format="dimension" />
+        <attr name="refreshTimeColor" format="color" />
+        <attr name="refreshTimeSize" format="dimension" />
+        <attr name="refreshArrowUp" format="reference" />
+        <attr name="refreshArrowDown" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="shape" format="integer">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+            <enum name="svg" value="3" />
+        </attr>
+        <attr name="svg_raw_resource" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

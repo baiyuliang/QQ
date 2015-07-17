@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_title" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textColor="@color/whites"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/whites" 
+            android:background="@null"/>
+
+        <LinearLayout
+            android:id="@+id/common_constact"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ll_top_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/constact_group"
+                style="@style/top_group"
+                android:text="@string/group" />
+
+            <Button
+                android:id="@+id/constact_all"
+                style="@style/top_all"
+                android:text="@string/all" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.qq.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qq.view.CustomListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#70CDCDCD"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:background="@color/whites"
+        android:listSelector="@drawable/list_item_selector"
+        android:fadingEdgeLength="0dp" />
+
+
+</RelativeLayout>
